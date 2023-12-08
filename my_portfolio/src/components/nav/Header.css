@@ -1,0 +1,23 @@
+.visible {
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+    top: 0;
+    /* Optional: adjust top position if needed */
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+    pointer-events: none;
+    /* optional, to prevent interactions with hidden navbar */
+    top: -50px;
+    /* Optional: adjust top position if needed */
+}
+
+
+
+.navbar-nav .nav-item.active a {
+    color: #fff !important;
+    text-decoration: none;
+
+}
