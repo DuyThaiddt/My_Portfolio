@@ -9,11 +9,11 @@ export default function Header() {
 
     const handleScroll = () => {
         const currentScrollPos = window.scrollY;
-
         setVisible(currentScrollPos <= 0 || currentScrollPos < prevScrollPos);
         setPrevScrollPos(currentScrollPos);
     };
 
+    
     const scrollToTop = () => {
         scroll.scrollToTop();
     };
@@ -31,11 +31,20 @@ export default function Header() {
     }, [prevScrollPos]);
 
     return (
-        <div className={`container-fluid top-0 position-fixed w-100 ${visible ? "visible" : "hidden"}`}>
+        <div className={`container-fluid top-0 position-fixed w-100 ${visible ? "visible" : "hidden"} hover-show` }>
             <nav className="navbar navbar-expand-lg navbar-dark">
                 <div className="container-fluid">
                     <a className="navbar-brand" onClick={scrollToTop} style={{ cursor: "pointer" }}>
-                        <img src="assets/img/logo.png" width={"170px"} alt="Logo"></img>
+                        <Link
+                            to="greeting"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={10}
+                            onSetActive={() => handleSetActive("greeting")}
+                        >
+                            <img src="assets/img/logo.png" width={"140px"} alt="Logo"></img>
+                        </Link>
                     </a>
                     <button
                         className="navbar-toggler"
