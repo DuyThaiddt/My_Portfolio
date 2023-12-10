@@ -10,19 +10,19 @@ function App() {
   return (
     <>
       <div className='header'><Header /></div>
-      <div className='greeting'><Greeting /></div>
+      <div className='section greeting'><Greeting /></div>
 
-      <div className='about'>
+      <div className='section about'>
         <div>This is the About</div>
         <About />
       </div>
 
-      <div className='projects'>
+      <div className='section projects'>
         <div>This is a Projects</div>
         <Project />
       </div>
 
-      <div className='contact'>
+      <div className='section contact'>
         <div>This is a Contact</div>
         <Contact />
       </div>

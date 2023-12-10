@@ -43,7 +43,7 @@ export default function Header() {
                             duration={10}
                             onSetActive={() => handleSetActive("greeting")}
                         >
-                            <img src="assets/img/logo.png" width={"140px"} alt="Logo"></img>
+                            <img src="assets/img/logo.png" width={"110px"} alt="Logo"></img>
                         </Link>
                     </a>
                     <button
@@ -69,7 +69,7 @@ export default function Header() {
                                     onSetActive={() => handleSetActive("about")}
                                 >
                                     <a className="nav-link" aria-current="page" href="#">
-                                        <h4>About /{">"}</h4>
+                                        <h5>About /{">"}</h5>
                                     </a>
                                 </Link>
                             </li>
@@ -83,7 +83,7 @@ export default function Header() {
                                     onSetActive={() => handleSetActive("projects")}
                                 >
                                     <a className="nav-link" aria-current="page" href="#">
-                                        <h4>Projects /{">"}</h4>
+                                        <h5>Projects /{">"}</h5>
                                     </a>
                                 </Link>
                             </li>
@@ -97,7 +97,7 @@ export default function Header() {
                                     onSetActive={() => handleSetActive("contact")}
                                 >
                                     <a className="nav-link" aria-current="page" href="#">
-                                        <h4>Contact /{">"}</h4>
+                                        <h5>Contact /{">"}</h5>
                                     </a>
                                 </Link>
                             </li>
